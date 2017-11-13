@@ -72,8 +72,8 @@ def weather(req):
     """
     parameters = req['result']['parameters']
 
-    print 'API.AI Parameters:'
-    print json.dumps(parameters, indent=4)
+    print('API.AI Parameters:')
+    print(json.dumps(parameters, indent=4))
 
     # validate request parameters, return an error if there are issues
     error, forecast_params = validate_params(parameters)
